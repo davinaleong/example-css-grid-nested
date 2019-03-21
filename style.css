@@ -1,7 +1,7 @@
 :root {
   --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
   --font-code: 'Inconsolata', Consolas, Menlo, 'Courier New', Courier, monospace;
-  --font-size: 16px;
+  --font-size: 20px;
   --col-white: #fff;
   --col-black: #000;
   --col-primary: #2196F3;
@@ -11,14 +11,17 @@
   --col-secondary-light: #e0e0e0;
   --col-secondary-dark: #212121;
 
-  --space-half: 0.5rem;
+  --space-half: 8px;
+  --space: 16px;
+  --space-x2: 32px;
 
   font-size: var(--font-size);
-  font-family: var(--font-body);
+  font-family: var(--font-code);
   padding: 0;
   margin: 0;
   color: var(--col-white);
   background-color: var(--col-secondary-dark);
+  box-sizing: border-box;
 }
 
 html, body {
@@ -26,11 +29,32 @@ html, body {
   padding: 0;
 }
 
+main {
+  margin: var(--space-x2);
+}
+
 h1 {
+  font-family: var(--font-body);
   font-size: 2.4rem;
   font-weight: normal;
   padding: var(--space-half);
   margin: 0 0 var(--space-half) 0;
   color: var(--col-secondary-light);
   box-shadow: 1px 0 5px 2px var(--col-black);
+}
+
+.grid {
+  display: grid;
+}
+
+.box {
+  padding: var(--space);
+  border-radius: 16px;
+  color: var(--col-secondary-dark);
+  background-color: var(--col-primary-light);
+}
+
+.box .box {
+  color: var(--col-secondary-light);
+  background-color: var(--col-secondary-dark);
 }
