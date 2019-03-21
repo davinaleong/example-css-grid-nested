@@ -1,2 +1,3 @@
 # Nested CSS Grid Example
-Simple nested CSS Grid Example
+
+Example on how to do Nest Grid in **CSS Grid**.
