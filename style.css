@@ -1,0 +1,36 @@
+:root {
+  --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-code: 'Inconsolata', Consolas, Menlo, 'Courier New', Courier, monospace;
+  --font-size: 16px;
+  --col-white: #fff;
+  --col-black: #000;
+  --col-primary: #2196F3;
+  --col-primary-light: #90caf9;
+  --col-primary-dark: #1565c0;
+  --col-secondary: #9e9e9e;
+  --col-secondary-light: #e0e0e0;
+  --col-secondary-dark: #212121;
+
+  --space-half: 0.5rem;
+
+  font-size: var(--font-size);
+  font-family: var(--font-body);
+  padding: 0;
+  margin: 0;
+  color: var(--col-white);
+  background-color: var(--col-secondary-dark);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  padding: var(--space-half);
+  margin: 0 0 var(--space-half) 0;
+  color: var(--col-secondary-light);
+  box-shadow: 1px 0 5px 2px var(--col-black);
+}
